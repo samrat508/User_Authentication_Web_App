@@ -31,8 +31,11 @@ Limitations (what I would improve)
 This was a class project, not production code. Known gaps:
 
 -Passwords are stored as plain text in user_data.txt. A real app should hash them (for example with werkzeug.security) and use a database.
+
 -The secret key is hard-coded, and debug mode is on.
+
 -The file path is hard-coded to my computer.
+
 -There is no session management, so the app doesn't keep users logged in.
 
 Author
