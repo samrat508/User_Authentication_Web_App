@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UEFA Champions League</title>
+</head>
+<body>
+    <!-- Page Title -->
+    <h1>UEFA Champions League</h1>
+
+     <!-- Overview Section -->
+    <h2>Overview</h2>
+    <p>The UEFA Champions League is an annual club football competition organized by the Union of European Football Associations (UEFA).</p>
+
+    <!-- Format Section -->
+    <h2>Format</h2>
+    <p>The tournament consists of several stages:</p>
+
+    <!-- Group Stage Description -->
+    <h3>Group Stage</h3>
+    <p>32 teams are divided into eight groups of four teams each. Each team plays a round-robin tournament, and the top two from each group advance.</p>
+
+    <!-- Knockout Stage Description -->
+    <h3>Knockout Stage</h3>
+    <p>16 teams move on to the knockout stage, which includes the Round of 16, Quarter-finals, Semi-finals, and the Final.</p>
+
+    <!-- Trophies Section -->
+    <h2>Trophies</h2>
+    <ul>
+        <li>Winning the UEFA Champions League is one of the most prestigious honors in European club football.</li>
+        <li>The winning team is awarded the UEFA Champions League Trophy.</li>
+    </ul>
+
+    <!-- Notable Winners Section -->
+    <h2>Notable Winners</h2>
+    <ol>
+        <li><a href="https://en.wikipedia.org/wiki/Real_Madrid_CF" target="_blank">Real Madrid</a> - 13 titles</li>
+        <li><a href="https://en.wikipedia.org/wiki/AC_Milan" target="_blank">AC Milan</a> - 7 titles</li>
+        <li><a href="https://en.wikipedia.org/wiki/FC_Barcelona" target="_blank">FC Barcelona</a> - 5 titles</li>
+        <li><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." target="_blank">Liverpool</a> - 6 titles</li>
+        <li><a href="https://en.wikipedia.org/wiki/FC_Bayern_Munich" target="_blank">Bayern Munich</a> - 6 titles</li>
+    </ol>
+
+
+    <!-- Links to Other Pages -->
+    <h2><a href="list">Recent Winners</a></h2>
+
+    <h2><a href="current">Current Champion</a></h2>
+
+    <!-- Link to Change Password Page -->
+    <h2><a href="{{ url_for('update_password') }}">Change Password</a></h2>
+
+
+    <!--the current date and time-->
+    {{datetime}}
+</body>
+</html>
