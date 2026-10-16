@@ -1,12 +1,13 @@
 from flask import Flask, redirect, render_template, url_for, request, flash
 from datetime import datetime
+import os
 import re
 import logging
 
 app = Flask(__name__, static_folder='static')
 
-# the path to your data files
-path = "/Users/samratshakya/Desktop/Python/lab 6/"
+# the path to data files
+path = os.path.dirname(os.path.abspath(__file__)) + os.sep
 
 # Configure the logger
 logging.basicConfig(filename='login_attempts.log', level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -231,7 +232,7 @@ def update_password_in_file(username, new_password):
                     line = f"{username},{new_password}"
             lines.append(line)
     
-    with open("user_data.txt", "w") as data_file:
+    with open(path + "user_data.txt", "w") as data_file:
         for line in lines:
             data_file.write(line + "\n")
 
